@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageButton
+        android:layout_width="160dp"
+        android:layout_height="72dp"
+        android:background="@mipmap/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/return_back"/>
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="280dp"
+        android:layout_height="72dp"
+        android:background="@mipmap/pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="写标题并使用合适的话题，能让更多人看到~"
+        android:textColor="@color/white"
+        android:gravity="top"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView"
+        android:layout_marginTop="50dp"/>
+
+    <ImageButton
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:background="@mipmap/release"
+        android:id="@+id/release"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="20dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
